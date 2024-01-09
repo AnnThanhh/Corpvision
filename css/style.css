@@ -198,6 +198,7 @@ header.nav-fixed{
   height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 
 .nav-fixed .navbar-brand span {
@@ -206,48 +207,12 @@ header.nav-fixed{
 
 #site-header .nav-fixed .navbar-expand-lg li .nav-item.active .nav-link {
   color: #009f4d;
+  z-index: 999;
 }
 
 #site-header .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
   color: white;
   opacity: 0.7;
-}
-
-/* Light theme */
-#myBody {
-  background-color: white;
-}
-
-#switchButton {
-  background-color: transparent;
-}
-
-#switchButton .fa-sun {
-  display: none;
-}
-
-#switchButton .fa-moon {
-  display: block;
-  color: white;
-}
-
-/* Dark Theme*/
-.dark#myBody {
-  background-color: white;
-}
-
-.dark #switchButton {
-  background-color: transparent;
-}
-
-.dark #switchButton .fa-sun {
-  display: block;
-  color: white;
-}
-
-.dark #switchButton .fa-moon {
-  display: none;
-  color: white;
 }
 
 /* corpCarousel */
@@ -709,12 +674,13 @@ header.nav-fixed{
 
 /* News */
 .news {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .new__item .card {
   border-color: transparent;
   box-shadow: 0 30px 100px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid white;
 }
 
 .new__item .card .card__img {
@@ -792,12 +758,12 @@ header.nav-fixed{
   color: #3f3a64;
   font-weight: 600;
   text-transform: capitalize;
-
   transition: all 0.5s;
 }
 
 .new__item .new__detail.card-body .info img {
   object-fit: contain;
+  border-radius: 100%;
 }
 
 .new__item .card .new__title.card-body .card-title:hover,
@@ -952,6 +918,115 @@ footer {
 
 .footer__bottom span:hover {
   color: #fff;
+}
+
+/* Light theme */
+#myBody {
+  background-color: white;
+}
+
+#switchButton {
+  background-color: transparent;
+}
+
+#switchButton .fa-sun {
+  display: none;
+}
+
+#switchButton .fa-moon {
+  display: block;
+  color: white;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: white;
+}
+
+.dark #switchButton {
+  background-color: transparent;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon {
+  display: none;
+  color: white;
+}
+
+          /* Carsousel */
+.dark .shape path {
+  fill: #151421;
+}
+
+          /* About Us */
+.dark .about__us{
+  background-color: #151421;
+}
+
+.dark .aboutUs__left .title_desc, .dark .aboutUs__left ul a{
+  color: white;
+}
+
+          /* Challenges */
+.dark .challanges, .dark .challenges__item {
+  background-color: #100f19;
+}
+
+.dark .challanges__left .title_desc, .dark .challenges__item h3{
+  color: white;
+}
+
+          /* Services */
+.dark .services, .dark .services__top button, .dark .services__bottom button{
+  background-color: #151421;
+}
+
+.dark .services .title_desc, .dark .services__top button, .dark .services__bottom button{
+  color: white;
+}
+
+          /* Gallery */
+.dark .gallery{
+  background-color: #100f19;
+}
+
+.dark .gallery .title_desc{
+  color: white;
+}
+
+          /* Success */
+.dark .success{
+  background-color: #151421;
+}
+
+.dark .success .title_desc, .dark .progress__list h6{
+  color: white;
+}
+
+.dark .progress__list .progress__item .progress{
+  background-color:  #100f19;
+}
+
+          /* Feedbacks */
+.dark .feedback{
+  background-color: #100f19;
+}
+
+.dark .feedback .title_desc, .dark .media h5{
+  color: white;
+}
+
+          /* News */
+.dark .news, .dark #new__card{
+  background-color: #151421;
+}
+
+.dark .news .title_desc, .dark #new__card .new__title .card-text, .dark #new__card .new__detail .card-link {
+  color: white;
 }
 
 /* Back to top  */
