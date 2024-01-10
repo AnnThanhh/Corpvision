@@ -64,13 +64,10 @@ a {
   text-transform: capitalize;
   line-height: 1rem;
   font-weight: 600;
-
   border-radius: 10px;
   background-color: #00a63f;
   border: 1px solid #00a63f;
-
   padding: 15px 50px;
-
   transition: all 0.5s;
 }
 
@@ -100,7 +97,7 @@ header {
   text-transform: capitalize;
 }
 
-.navbar-brand span{
+.navbar-brand span {
   color: white;
 }
 
@@ -120,13 +117,13 @@ header {
   opacity: 0.9;
 }
 
-#site-header .navbar .nav-item .nav-link {
+.navbar .nav-item .nav-link {
   font-weight: 700;
   font-size: 0.9rem;
   transition: all 0.5s ease;
   padding: 0 15px;
   color: white;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .dropdown-item {
@@ -141,12 +138,12 @@ header {
   background-color: white;
 }
 
-#site-header .navbar .nav-item.active .nav-link {
+.navbar .nav-item.active .nav-link {
   color: white;
   opacity: 1;
 }
 
-#site-header .navbar .nav-item:hover .nav-link {
+.navbar .nav-item:hover .nav-link {
   color: white;
   opacity: 1;
 }
@@ -169,18 +166,17 @@ header {
 }
 
 .control .icon-material-search {
-  color: #fff;
-  transition: opacity 0.3s ease-in-out;
+  color: white;
 }
 
-.fixed-top{
+.fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
 }
 
-header.nav-fixed{
+header.nav-fixed {
   padding: 0px;
   background-color: white;
   height: 80px;
@@ -194,13 +190,40 @@ header.nav-fixed{
   color: #3f3a64;
 }
 
-.nav-fixed #site-header .navbar .nav-item .nav-link{
+.nav-fixed .navbar .nav-item.active .nav-link {
   color: #009f4d;
 }
 
-.nav-fixed .navbar-nav .nav-item a{
+.nav-fixed .navbar-nav .nav-item a {
   color: #3f3a64;
   opacity: 0.7;
+}
+
+header .navbar-toggler {
+  background-color: #35a22c;
+}
+
+@media screen and (max-width: 992px) {
+  header .navbar-collapse {
+    margin-bottom: 0px;
+  }
+
+  #navbarSupportedContent .nav-item {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  #navbarSupportedContent #switchButton{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+  }
+
+  #navbarSupportedContent .control {
+    position: absolute;
+    right: 130px;
+    top: 24px;
+  }
 }
 
 /* corpCarousel */
@@ -209,7 +232,7 @@ header.nav-fixed{
 }
 
 .corpCarousel__overlay {
-  background-color: #1d2a37b3;
+  background-color: rgba(29, 42, 55, 0.541);
   position: absolute;
   left: 0;
   top: 0;
@@ -300,7 +323,6 @@ header.nav-fixed{
   color: #3f3a64;
   text-decoration: none;
 }
-
 
 .aboutUs__right img {
   object-fit: cover;
@@ -911,6 +933,7 @@ footer {
 /* Light theme */
 #myBody {
   background-color: white;
+  width: 100%;
 }
 
 #switchButton {
@@ -919,14 +942,16 @@ footer {
 
 #switchButton .fa-sun {
   display: none;
+  font-size: 1.2rem;
 }
 
 #switchButton .fa-moon {
   display: block;
   color: white;
+  font-size: 1.2rem;
 }
 
-.nav-fixed #switchButton .fa-moon{
+.nav-fixed #switchButton .fa-moon {
   color: #3f3a64;
 }
 
@@ -949,7 +974,7 @@ footer {
   color: white;
 }
 
-.dark .nav-fixed{
+.dark .nav-fixed {
   background-color: #151421;
 }
 
@@ -957,76 +982,87 @@ footer {
   color: white;
 }
 
-
-          /* Carsousel */
+/* Carsousel */
 .dark .shape path {
   fill: #151421;
 }
 
-          /* About Us */
-.dark .about__us{
+/* About Us */
+.dark .about__us {
   background-color: #151421;
 }
 
-.dark .aboutUs__left .title_desc, .dark .aboutUs__left ul a{
+.dark .aboutUs__left .title_desc,
+.dark .aboutUs__left ul a {
   color: white;
 }
 
-          /* Challenges */
-.dark .challanges, .dark .challenges__item {
+/* Challenges */
+.dark .challanges,
+.dark .challenges__item {
   background-color: #100f19;
 }
 
-.dark .challanges__left .title_desc, .dark .challenges__item h3{
+.dark .challanges__left .title_desc,
+.dark .challenges__item h3 {
   color: white;
 }
 
-          /* Services */
-.dark .services, .dark .services__top button, .dark .services__bottom button{
+/* Services */
+.dark .services,
+.dark .services__top button,
+.dark .services__bottom button {
   background-color: #151421;
 }
 
-.dark .services .title_desc, .dark .services__top button, .dark .services__bottom button{
+.dark .services .title_desc,
+.dark .services__top button,
+.dark .services__bottom button {
   color: white;
 }
 
-          /* Gallery */
-.dark .gallery{
+/* Gallery */
+.dark .gallery {
   background-color: #100f19;
 }
 
-.dark .gallery .title_desc{
+.dark .gallery .title_desc {
   color: white;
 }
 
-          /* Success */
-.dark .success{
+/* Success */
+.dark .success {
   background-color: #151421;
 }
 
-.dark .success .title_desc, .dark .progress__list h6{
+.dark .success .title_desc,
+.dark .progress__list h6 {
   color: white;
 }
 
-.dark .progress__list .progress__item .progress{
-  background-color:  #100f19;
-}
-
-          /* Feedbacks */
-.dark .feedback{
+.dark .progress__list .progress__item .progress {
   background-color: #100f19;
 }
 
-.dark .feedback .title_desc, .dark .media h5{
+/* Feedbacks */
+.dark .feedback {
+  background-color: #100f19;
+}
+
+.dark .feedback .title_desc,
+.dark .media h5 {
   color: white;
 }
 
-          /* News */
-.dark .news, .dark #new__card{
+/* News */
+.dark .news,
+.dark #new__card {
   background-color: #151421;
 }
 
-.dark .news .title_desc, .dark #new__card .new__title .card-text, .dark #new__card .new__detail .card-link {
+.dark .news .title_desc,
+.dark #new__card .new__title .card-text,
+.dark #new__card .new__detail .card-link {
   color: white;
 }
 
@@ -1057,28 +1093,29 @@ footer {
 
 @media screen and (max-width: 991.98px) {
   header .navbar-collapse {
-      background-color: black
+    background-color: black;
   }
 
   #navbarPort .nav-item {
-      margin: 0;
-      padding: 0 10px
+    margin: 0;
+    padding: 0 10px;
   }
 
   #navbarPort .nav-item:hover {
-      background-color: #35a22c
+    background-color: #35a22c;
   }
 
   #navbarPort .nav-item .nav-link {
-      color: #35a22c
+    color: #35a22c;
   }
 
   #navbarPort .nav-item:hover .nav-link {
-      color: #fff
+    color: #fff;
   }
 
-  #navbarPort .nav-item.active::after,#navbarPort .nav-item:hover::after {
-      width: 0
+  #navbarPort .nav-item.active::after,
+  #navbarPort .nav-item:hover::after {
+    width: 0;
   }
 
   .gallery .logo__list .row {
@@ -1096,5 +1133,4 @@ footer {
   .map .map__info {
     width: 100%;
   }
-
 }
