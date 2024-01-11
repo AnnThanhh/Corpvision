@@ -203,6 +203,10 @@ header .navbar-toggler {
   background-color: #35a22c;
 }
 
+#site-header .navbar-collapse.show{
+  background-color: transparent;
+}
+
 @media screen and (max-width: 992px) {
   header .navbar-collapse {
     margin-bottom: 0px;
