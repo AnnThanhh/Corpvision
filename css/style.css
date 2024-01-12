@@ -288,6 +288,7 @@ header .navbar-toggler {
   left: 0;
   width: 100%;
   z-index: 2;
+  overflow: hidden;
 }
 
 .shape path {
@@ -297,6 +298,17 @@ header .navbar-toggler {
   width: 100%;
   overflow: hidden;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 992px) {
+  .corpCarousel .corpCarousel__content h1{
+    font-size: 2.5rem;
+  }
+
+  .corpCarousel .corpCarousel__content p{
+    font-size: 1.1rem;
+  }
+
 }
 
 /* About__us */
