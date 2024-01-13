@@ -359,11 +359,16 @@ header .navbar-toggler {
   font-weight: 600;
   font-size: 1.5rem;
   color: #3f3a64;
+  transition: all 0.5s;
 }
 
 .challenges__item:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.challenges__item h3:hover{
+  color: #009f4d;
 }
 
 /* Services */
@@ -986,6 +991,10 @@ footer {
   color: white;
 }
 
+.dark .nav-fixed .navbar-nav .nav-item .nav-link {
+  color: #eee;
+}
+
 /* Carsousel */
 .dark .shape path {
   fill: #151421;
@@ -1012,6 +1021,14 @@ footer {
   color: white;
 }
 
+.dark .challenges__item{
+  background-color: #151421;
+}
+
+.dark .challenges__item h3:hover{
+  color: #009f4d;
+}
+
 /* Services */
 .dark .services,
 .dark .services__top button,
@@ -1023,6 +1040,11 @@ footer {
 .dark .services__top button,
 .dark .services__bottom button {
   color: white;
+}
+
+.dark .services__top button:hover,
+.dark .services__bottom button:hover {
+  color: #009f4d;
 }
 
 /* Gallery */
